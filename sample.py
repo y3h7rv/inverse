@@ -7,6 +7,8 @@
 """
 Sample new images from a pre-trained DiT.
 """
+import os
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 import torch
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True
